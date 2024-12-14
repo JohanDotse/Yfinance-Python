@@ -14,4 +14,4 @@ pip install yfinance
 + Cryptocurrencies: Bitcoin, Ethereum, Solana
 
 ### Contact
-Let me know if you woul like additional features or formatting. My email is johan (at) johan (dot) se
+Let me know if you would like additional features or formatting. My email is johan (at) johan (dot) se
