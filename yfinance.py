@@ -1,10 +1,3 @@
-Here's an enhanced version of the code that prints the current price, last close price, and percentage change for Gold, Silver, Natural Gas, Bitcoin, and Ethereum:
-
-
----
-
-Python Code:
-
 import yfinance as yf
 
 # Define tickers
@@ -27,15 +20,3 @@ for name, ticker in tickers.items():
     print(f"  Current Price: ${current_price:.2f}")
     print(f"  Last Close:   ${last_close:.2f}")
     print(f"  Change:       {percent_change:.2f}%\n")
-
-
----
-
-
-\text{Percentage Change} = \frac{\text{Current Price} - \text{Last Close}}{\text{Last Close}} \times 100
-
-
----
-
-Let me know if you'd like additional features or formatting!
-
