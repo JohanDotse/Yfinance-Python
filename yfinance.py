@@ -6,7 +6,8 @@ tickers = {
     "Silver": "SI=F",
     "Natural Gas": "NG=F",
     "Bitcoin": "BTC-USD",
-    "Ethereum": "ETH-USD"
+    "Ethereum": "ETH-USD",
+    "Solana": "SOL-USD"
 }
 
 # Fetch and display prices
