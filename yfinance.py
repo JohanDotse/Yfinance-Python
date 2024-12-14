@@ -1,9 +1,13 @@
-# Installation
-pip install yfinance
+Here's an enhanced version of the code that prints the current price, last close price, and percentage change for Gold, Silver, Natural Gas, Bitcoin, and Ethereum:
+
+
+---
+
+Python Code:
 
 import yfinance as yf
 
-# Tickers
+# Define tickers
 tickers = {
     "Gold": "GC=F",
     "Silver": "SI=F",
@@ -16,4 +20,22 @@ tickers = {
 for name, ticker in tickers.items():
     asset = yf.Ticker(ticker)
     current_price = asset.info['regularMarketPrice']
-    print(f"Current {name} Price: ${current_price:.2f}")
+    last_close = asset.info['previousClose']
+    percent_change = ((current_price - last_close) / last_close) * 100
+    
+    print(f"{name}:")
+    print(f"  Current Price: ${current_price:.2f}")
+    print(f"  Last Close:   ${last_close:.2f}")
+    print(f"  Change:       {percent_change:.2f}%\n")
+
+
+---
+
+
+\text{Percentage Change} = \frac{\text{Current Price} - \text{Last Close}}{\text{Last Close}} \times 100
+
+
+---
+
+Let me know if you'd like additional features or formatting!
+
